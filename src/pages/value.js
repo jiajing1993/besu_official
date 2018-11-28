@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 
 const SecondPage = () => (
   <Layout>
-    <h1>Hi from the value page</h1>
+    <p className="page-title">Value</p>
   </Layout>
 )
 
