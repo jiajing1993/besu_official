@@ -9,13 +9,9 @@ import React from 'react'
 import Transition from './src/components/transition'
 
 export const wrapPageElement = ({ element, props }) => {
-  console.log(element)
   return (
     <div>
-      
       <Transition {...props}>{element}</Transition>
     </div>
-    
   )
-  
 }
