@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import posed from 'react-pose'
 
 import './header.scss'
+import logo from "../images/besu.png"
 
 const AnimatedContainer = posed.div({
   enter: {
@@ -22,9 +23,7 @@ const AnimatedContainer = posed.div({
 const Header = ({ siteTitle }) => (
   <AnimatedContainer>
     <div className="header">
-      <h1 className="logo">
-        {siteTitle}
-      </h1>
+      <img className="logo" src={logo} alt="Logo" />
       <Link to="/" activeStyle={{ display: "none" }}> Back </Link>
     </div>
   </AnimatedContainer>

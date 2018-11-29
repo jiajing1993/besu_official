@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-const SecondPage = () => (
+const WorkPage = () => (
   <Layout>
     <p className="page-title">Work</p>
   </Layout>
 )
 
-export default SecondPage
+export default WorkPage

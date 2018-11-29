@@ -50,8 +50,8 @@ const Layout = ({ children }) => (
             <AnimatedContainer>
               {children}
             </AnimatedContainer>
-            <Footer />
           </div>
+          <Footer />
         </>
       )}
     }

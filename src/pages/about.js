@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-const SecondPage = () => {
+const AboutPage = () => {
   return (
     <Layout>
       <p className="page-title">About</p>
@@ -9,4 +9,4 @@ const SecondPage = () => {
   )
 }
 
-export default SecondPage
+export default AboutPage
