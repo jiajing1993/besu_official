@@ -11,14 +11,14 @@ import './layout.scss'
 
 const AnimatedContainer = posed.div({
   enter: {
-    y: 0,
+    y: -50,
     opacity: 1,
-    transition: { duration: 300 }
+    transition: { duration: 1000 }
   },
   exit: {
-    y: 100,
+    y: 300,
     opacity: 0,
-    transition: { duration: 150 }
+    transition: { duration: 1000 }
   },
 });
 

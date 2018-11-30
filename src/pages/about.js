@@ -4,7 +4,9 @@ import Layout from '../components/layout'
 const AboutPage = () => {
   return (
     <Layout>
-      <p className="page-title">About</p>
+      <div className="about">
+        <p className="page-title">About</p>
+      </div>
     </Layout>
   )
 }

@@ -3,7 +3,9 @@ import Layout from '../components/layout'
 
 const WorkPage = () => (
   <Layout>
-    <p className="page-title">Work</p>
+    <div className="work">
+      <p className="page-title">Work</p>
+    </div>
   </Layout>
 )
 

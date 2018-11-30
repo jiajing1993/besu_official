@@ -8,4 +8,11 @@
   img.logo {
     width: 100px;
   }
+  a {
+    color: #daa520;
+    transition: all 0.4s;
+    &:hover {
+      box-shadow: 0px 2px 0px rgba(#daa520,1)
+    }
+  }
 }

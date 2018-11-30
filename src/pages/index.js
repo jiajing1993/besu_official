@@ -7,7 +7,7 @@ const IndexPage = () => (
   <Layout>
     <div className="home">
       <section>
-        <p className="title-bg">We Design Brand Experience To Help Business to Grow</p>
+        <p className="title-bg">We Design <span>Brand Experience</span> To Help & <span>Grow Your Business</span></p>
       </section>
       <navbar>
         <div><Link to="/value/">Value</Link></div>

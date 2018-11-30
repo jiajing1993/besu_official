@@ -3,7 +3,10 @@ import Layout from '../components/layout'
 
 const ValuePage = () => (
   <Layout>
-    <p className="page-title">Value</p>
+    <div className="value">
+      <p className="page-title">Value</p>
+    </div>
+    
   </Layout>
 )
 
