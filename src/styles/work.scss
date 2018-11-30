@@ -5,5 +5,62 @@
     letter-spacing: 2.3px;
     color: #000000;
     width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+.grid-col-3 {
+  width: 30%;
+}
+.grid-col-7 {
+  width: 70%;
+}
+
+.grid-col-5 {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-col-3, .grid-col-5, .grid-col-7 {
+    width: 100%;
+  }
+}
+
+ul.work-categories {
+  padding: 0;
+  margin: 0;
+  li {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #9b9b9b;
+    list-style-type: none;
+    margin-bottom: 40px;
+    &:first-child {
+      color: black;
+    }
+  }
+}
+
+.work-item {
+  width: 92%;
+  margin: 0px auto;
+  margin-bottom: 70px;
+  img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  p.work-name{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+  p.work-type{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #9b9b9b;
   }
 }
