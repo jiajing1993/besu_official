@@ -1,0 +1,112 @@
+.about-body {
+  
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+  .grid-col-4 {
+    width: 40%;
+    p {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #9b9b9b;
+    }
+  }
+  .grid-col-6 {
+    width: 60%;
+  }
+  @media only screen and (max-width: 600px) {
+    .grid-col-4, .grid-col-6 {
+      width: 100%;
+    }
+  }
+}
+
+.about-us {
+  .grid-col-6 {
+    p {
+      font-size: 2vw;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      color: #4a4a4a;
+      @media only screen and (max-width: 600px) {
+        font-size: 6vw;
+        line-height: 1.1;
+      }
+    }
+  }
+}
+
+.team-member {
+  display: flex;
+  margin-bottom: 40px;
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .team-info {
+    padding-left: 10px;
+    position: relative;
+    p {
+      text-transform: uppercase;
+    }
+    .name {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1.3px;
+      color: #000000;
+      margin-bottom: 5px;
+    }
+    .role {
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1.1px;
+      color: #9b9b9b;
+    }
+    .contact {
+      font-size: 12px;
+      color: #9b9b9b;
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      &.hide{
+        position: relative;
+        display: block;
+        opacity: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.process {
+  li {
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 600px) {
+      font-size: 5vw;
+      line-height: 1.1;
+    }
+  }
+}
+
+.pricing {
+  p {
+    font-size: 2vw;
+    letter-spacing: 1.2px;
+    color: #4a4a4a;
+    @media only screen and (max-width: 600px) {
+      font-size: 5vw;
+      line-height: 1.1;
+    }
+  }
+}
