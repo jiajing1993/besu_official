@@ -1,25 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
-import posed from 'react-pose'
 
 import '../styles/work.scss'
 
-const AnimatedContainer = posed.div({
-  enter: {
-    y: -50,
-    opacity: 1,
-    transition: { duration: 1000 }
-  },
-  exit: {
-    y: 300,
-    opacity: 0,
-    transition: { duration: 1000 }
-  },
-});
-
 const WorkPage = () => (
   <Layout>
-    <AnimatedContainer>
     <div className="work">
       <p className="page-title">Work</p>
     </div>
@@ -54,8 +39,6 @@ const WorkPage = () => (
         </div>
       </div>
     </div>
-
-    </AnimatedContainer>
   </Layout>
 )
 
