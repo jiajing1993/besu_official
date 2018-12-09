@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+
+// Note: This could help to debug the page transition issue.
+// https://github.com/gatsbyjs/gatsby/issues/8822
