@@ -28,7 +28,7 @@ const WorkPage = () => (
               projects.map((project) => {
                 return (
                   <div className="grid-col-5" key={project.id}>
-                    <a href={project.link} target="_blank">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <div className="work-item">
                         <img src={project.image} alt=""/>
                         <p className="work-name">{ project.name}</p>
