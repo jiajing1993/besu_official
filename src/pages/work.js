@@ -1,8 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { projects } from '../data'
 
 import '../styles/work.scss'
 
+console.log(projects)
 const WorkPage = () => (
   <Layout>
     <div className="work">
@@ -22,15 +24,23 @@ const WorkPage = () => (
         </div>
         <div className="grid-col-7">
           <div className="grid">
-            {
-              [1,2,3,4,5].map((index) => {
+            { 
+              projects.map((project) => {
                 return (
-                  <div className="grid-col-5" key={index}>
-                    <div className="work-item">
-                      <img src="https://boygeniusreport.files.wordpress.com/2016/10/macbook-pro-2016-apple-event-1.jpg" alt=""/>
-                      <p className="work-name">CT Engineering & Construction</p>
-                      <p className="work-type">Branding + Website</p>
-                    </div>
+                  <div className="grid-col-5" key={project.id}>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <div className="work-item">
+                        <img src={project.image} alt=""/>
+                        <p className="work-name">{ project.name}</p>
+                        <p className="work-type">{
+                          project.type.map((type, index) => {
+                            return (
+                              index === 0 ? `${type} ` : `+ ${type} `
+                            )
+                          })
+                        }</p>
+                      </div>
+                    </a>
                   </div>
                 )
               })
