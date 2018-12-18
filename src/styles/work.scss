@@ -1,3 +1,17 @@
+.work {
+  min-height: calc(100vh - 70px);
+  align-items: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  
+  .page-title {
+    text-align: center;
+    font-size: 20vw;
+    margin: 0;
+  }
+}
+
 .big-text {
   font-size: 32px;
   font-weight: bold;
