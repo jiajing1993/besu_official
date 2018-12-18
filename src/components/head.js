@@ -5,7 +5,7 @@ export default class head extends Component {
   render() {
     return (
       <Helmet
-        title={`Besu | We create Brand and Digitalize Your Business`}
+        title={`Besu Official Website`}
         meta={[
           { name: 'description', content: 'Besu' },
           { name: 'keywords', content: 'design agency, creative, branding' },
