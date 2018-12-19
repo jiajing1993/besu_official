@@ -1,5 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Grid from '../components/style/grid'
+import BigText from '../components/style/bigText'
+import Jumbotron from '../components/style/jumbotron'
 import { projects } from '../data'
 
 import '../styles/work.scss'
@@ -7,13 +10,11 @@ import '../styles/work.scss'
 console.log(projects)
 const WorkPage = () => (
   <Layout>
-    <div className="work">
-      <p className="page-title">Work</p>
-    </div>
+    <Jumbotron>Work</Jumbotron>
     <div className="work-body">
-      <p className="big-text">We humanize brands, launch visions and clarify the complex.</p>
-      <div className="grid">
-        <div className="grid-col-3">
+      <BigText>We humanize brands, launch visions and clarify the complex.</BigText>
+      <Grid.Row>
+        <Grid.Column width={3}>
           <ul className="work-categories">
             <li>All</li>
             <li>Profesional Shooting</li>
@@ -21,13 +22,13 @@ const WorkPage = () => (
             <li>Web Deisgn</li>
             <li>UI UX </li>
           </ul>
-        </div>
-        <div className="grid-col-7">
-          <div className="grid">
+        </Grid.Column>
+        <Grid.Column width={7}>
+          <Grid.Row>
             { 
               projects.map((project) => {
                 return (
-                  <div className="grid-col-5" key={project.id}>
+                  <Grid.Column width={5} key={project.id}>
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <div className="work-item">
                         <img src={project.image} alt=""/>
@@ -41,13 +42,13 @@ const WorkPage = () => (
                         }</p>
                       </div>
                     </a>
-                  </div>
+                  </Grid.Column>
                 )
               })
             }
-          </div>
-        </div>
-      </div>
+          </Grid.Row>
+        </Grid.Column>
+      </Grid.Row>
     </div>
   </Layout>
 )

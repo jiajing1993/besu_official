@@ -1,16 +1,16 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Grid from '../components/style/grid'
+import BigText from '../components/style/bigText'
+import Jumbotron from '../components/style/jumbotron'
 import { values } from '../data/value'
 import '../styles/value.scss'
 
 const ValuePage = () => (
   <Layout>
-    <div className="value">
-      <p className="page-title">Value</p>
-    </div>
+    <Jumbotron>Value</Jumbotron>
     <div className="value-body">
-      <p className="big-text">We create story, brand, digital presence, good business and sandwiches.</p>
+      <BigText>We create story, brand, digital presence, good business and sandwiches.</BigText>
       {  
         values.map((value) => {
           return (

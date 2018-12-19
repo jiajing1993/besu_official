@@ -1,41 +1,36 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Grid from '../components/style/grid'
+import Jumbotron from '../components/style/jumbotron'
 import '../styles/about.scss'
 
 const AboutPage = () => {
   return (
     <Layout>
-      <div className="about">
-        <p className="page-title">About</p>
-      </div>
+      <Jumbotron>About</Jumbotron>
       <div className="about-body">
-        <Grid.Row className="about-us">
-          <Grid.Column width={4}><p>About</p></Grid.Column>
+        <Grid.Row marginBottom={120}>
+          <Grid.Column width={4}>
+            <p className="about-title">About</p>
+          </Grid.Column>
           <Grid.Column width={6}>
-            <p>
+            <p className="about-description">
               <strong>
                 Besu is a creative design agency that based in Kuala Lumpur, Malaysia. 
                 We design experience through story that builds brands, platforms that help businesses to win in digital culture.
               </strong>
-            </p>
-            <br/><br/>
-            <p>
-            Besu in a way has a meaning of ‘Not Lose’. We want to help SME to able to compete in the digital world. SMEs are different compare to large companies/corporates. They do not have billion dollar budgets, huge professional sales teams nor sophisticated quantitative analysis. But they are nimble, agile, and responsive to change. Their leaders have an exciting vision of what they want their business to be.
-            </p>
-            <br/><br/>
-            <p>
-            Combining our experience and expertise in business strategy and Brand Story, we have developed extremely profitable solution for SMEs operating in different industries and conditions.
-            </p>
-            <br/><br/>
-            <p>
+              <br/><br/>
+              Besu in a way has a meaning of ‘Not Lose’. We want to help SME to able to compete in the digital world. SMEs are different compare to large companies/corporates. They do not have billion dollar budgets, huge professional sales teams nor sophisticated quantitative analysis. But they are nimble, agile, and responsive to change. Their leaders have an exciting vision of what they want their business to be.
+              <br/><br/>
+              Combining our experience and expertise in business strategy and Brand Story, we have developed extremely profitable solution for SMEs operating in different industries and conditions.
+              <br/><br/>
               Our primary aim is that our work immediately improves your bottom line. Our expertise is efficiency. We pride ourselves on our ability to develop superior solutions with the absolute minimum investment required.
             </p>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
+        <Grid.Row marginBottom={120}>
           <Grid.Column width={4}>
-            <p>Team</p>
+          <p className="about-title">Team</p>
           </Grid.Column>
           <Grid.Column width={6}>
             <div className="team-member">
@@ -67,9 +62,9 @@ const AboutPage = () => {
             </div>
           </Grid.Column>
         </ Grid.Row>
-        <Grid.Row>
+        <Grid.Row marginBottom={120}>
           <Grid.Column width={4}>
-            <p>Process</p>
+          <p className="about-title">Process</p>
           </Grid.Column>
           <Grid.Column width={6}>
             <ol className="process">
@@ -84,9 +79,9 @@ const AboutPage = () => {
             </ol>
           </Grid.Column>
         </ Grid.Row>
-        <Grid.Row>
+        <Grid.Row marginBottom={120}>
           <Grid.Column width={4}>
-            <p>Pricing</p>
+            <p className="about-title">Pricing</p>
           </Grid.Column>
           <Grid.Column width={6}>
             <div className="pricing">

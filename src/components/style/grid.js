@@ -6,6 +6,7 @@ const GridRow = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: ${props => props.marginBottom}px;
 `
 
 const GridColumn = styled.div`
@@ -13,7 +14,9 @@ const GridColumn = styled.div`
 `
 
 export default class Grid extends Component {
-  static Row = ({ children }) => <GridRow>{children}</GridRow>;
-  static Column = (props) => <GridColumn width={props.width}>{props.children}</GridColumn>;
+  static Row = (props) => <GridRow marginBottom={props.marginBottom}>{props.children}</GridRow>;
+  static Column = (props) => <GridColumn width={props.width}>
+    {props.children}
+  </GridColumn>;
 
 }

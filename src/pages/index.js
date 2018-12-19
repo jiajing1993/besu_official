@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import styled from 'styled-components'
-import Grid from '../components/style/grid'
 
 const BorderBox = styled.div`
   border: 1px solid ${props => props.color};
@@ -71,11 +70,6 @@ const IndexPage = () => (
         <div><Link to="/about/">About</Link></div>
       </Nav>
     </Home>
-    <Grid.Row>
-      <Grid.Column width={3}>
-        <BorderBox>Hello</BorderBox>
-      </Grid.Column>
-    </Grid.Row>
   </Layout>
 )
 
