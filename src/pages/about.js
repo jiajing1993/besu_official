@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Grid from '../components/style/grid'
 import '../styles/about.scss'
 
 const AboutPage = () => {
@@ -9,11 +10,9 @@ const AboutPage = () => {
         <p className="page-title">About</p>
       </div>
       <div className="about-body">
-        <div className="grid about-us">
-          <div className="grid-col-4">
-            <p>About</p>
-          </div>
-          <div className="grid-col-6">
+        <Grid.Row className="about-us">
+          <Grid.Column width={4}><p>About</p></Grid.Column>
+          <Grid.Column width={6}>
             <p>
               <strong>
                 Besu is a creative design agency that based in Kuala Lumpur, Malaysia. 
@@ -32,13 +31,13 @@ const AboutPage = () => {
             <p>
               Our primary aim is that our work immediately improves your bottom line. Our expertise is efficiency. We pride ourselves on our ability to develop superior solutions with the absolute minimum investment required.
             </p>
-          </div>
-        </div>
-        <div className="grid">
-          <div className="grid-col-4">
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={4}>
             <p>Team</p>
-          </div>
-          <div className="grid-col-6">
+          </Grid.Column>
+          <Grid.Column width={6}>
             <div className="team-member">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIH1m0_TUhNhPEJP7LLrqQNlbPfq3GVDBUEaNPoRZiXhHVphQK" alt=""/>
               <div className="team-info">
@@ -66,13 +65,13 @@ const AboutPage = () => {
                 <p className="contact">jiyong@besu.com | 014 - 439 9009</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="grid">
-          <div className="grid-col-4">
+          </Grid.Column>
+        </ Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={4}>
             <p>Process</p>
-          </div>
-          <div className="grid-col-6">
+          </Grid.Column>
+          <Grid.Column width={6}>
             <ol className="process">
               <li>Understand and empathize with the users' life (consumer software) or work (business software) needs.</li>
               <li>First Concept - all about paper drawing and communicate.</li>
@@ -83,19 +82,18 @@ const AboutPage = () => {
               <li>Rocket Launched! Hooray. </li>
               <li>Not end yet, take what users said, and keep improving it!</li>
             </ol>
-          </div>
-        </div>
-        <div className="grid">
-          <div className="grid-col-4">
+          </Grid.Column>
+        </ Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={4}>
             <p>Pricing</p>
-          </div>
-          <div className="grid-col-6">
+          </Grid.Column>
+          <Grid.Column width={6}>
             <div className="pricing">
               <p>We charged a lots. Please don't call us if you don't have enough budgets.</p>
             </div>
-            
-          </div>
-        </div>
+          </Grid.Column>
+        </Grid.Row>
       </div>
     </Layout>
   )
