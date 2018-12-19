@@ -1,20 +1,7 @@
-.value {
-  min-height: calc(100vh - 70px);
-  align-items: center;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  
-  .page-title {
-    text-align: center;
-    font-size: 20vw;
-    margin: 0;
-  }
-}
-
 .value-name {
   margin-top: 10px;
 }
+
 .value-item {
   p.value-info {
     font-size: 30px;

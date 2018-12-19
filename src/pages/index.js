@@ -3,6 +3,12 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 
+const BorderBox = styled.div`
+  border: 1px solid ${props => props.color};
+  padding: 10px;
+  text-align: center;
+`
+
 const Home = styled.div`
   display: flex;
   min-height: calc(100vh - 60px);

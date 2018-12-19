@@ -7,7 +7,7 @@ class Transition extends Component {
 
     const RoutesContainer = posed.div({
       enter: { opacity: 1, delay: 500, delayChildren: 500 },
-      exit: { opacity: 0 },
+      exit: { opacity: 1 },
     });
 
     return (
