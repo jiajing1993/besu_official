@@ -30,7 +30,6 @@ const ValuePage = () => (
                         })
                       }
                     </ul>
-                    <button>Don't Click</button>
                   </div>
                 </Grid.Column>
             </Grid.Row>
