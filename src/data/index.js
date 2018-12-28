@@ -1,23 +1,20 @@
+import hairAtelierImage from './images/hairatelier.jpg'
+import ctImage from './images/ctbuilders.png'
 export const projects = [
   {
     id: 1,
-    name: "CT Engineering",
-    type: ["Branding", "Website"],
-    image: "https://boygeniusreport.files.wordpress.com/2016/10/macbook-pro-2016-apple-event-1.jpg",
+    name: "CT Engineering Website",
+    type: ["Profesional Shooting", "Web Design"],
+    image: ctImage,
     link: "https://www.ct.builders/",
   },
   {
     id: 2,
-    name: "Gas Buddy Super app",
-    type: ["Branding", "UIUX"],
-    image: "https://boygeniusreport.files.wordpress.com/2016/10/macbook-pro-2016-apple-event-1.jpg",
-    link: null,
-  },
-  {
-    id: 2,
-    name: "Gas Buddy Super app",
-    type: ["Branding", "UIUX"],
-    image: "https://boygeniusreport.files.wordpress.com/2016/10/macbook-pro-2016-apple-event-1.jpg",
-    link: null,
+    name: "Hair Atelier Official Website",
+    type: ["Video Production", "Web Design"],
+    image: hairAtelierImage,
+    link: "https://hairatelier.com.my/",
   }
 ]
+
+export const projectTypes = ["All", "Profesional Shooting", "Web Design", "UI UX", "Video Production", ]

@@ -1,6 +1,7 @@
 ul.work-categories {
   padding: 0;
   margin: 0;
+  margin-bottom: 30px;
   li {
     font-size: 14px;
     font-weight: bold;
@@ -8,7 +9,13 @@ ul.work-categories {
     color: #9b9b9b;
     list-style-type: none;
     margin-bottom: 40px;
-    &:first-child {
+    cursor: pointer;
+    @media (max-width: 700px) {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 15px 10px 0px 15px;
+    }
+    &.selected {
       color: black;
     }
   }
@@ -18,27 +25,43 @@ ul.work-categories {
   width: 92%;
   margin: 0px auto;
   margin-bottom: 70px;
-  
-  img {
+  @media (max-width: 700px) {
     width: 100%;
-    margin-bottom: 5px;
-    transition: all 0.5s;
   }
+  .work-image {
+    width: 100%;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    padding-bottom: 66%;
+    background-color: #D3D3D3;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  
   p.work-name{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: 1.1px;
+    letter-spacing: 1px;
     color: #000000;
     margin-bottom: 2px;
   }
   p.work-type{
     font-size: 14px;
-    font-weight: bold;
     letter-spacing: 1px;
     color: #9b9b9b;
   }
   &:hover {
-    img {
+    .work-image {
       transform: translateY(-10px);
       box-shadow: 0px 8px 24px rgba(0,0,0, 0.4)
     }

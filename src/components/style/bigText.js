@@ -8,6 +8,10 @@ const Text = styled.p`
   color: #000000;
   width: 50%;
   margin-bottom: 20vh;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+  
 `
 
 export default class bigText extends Component {

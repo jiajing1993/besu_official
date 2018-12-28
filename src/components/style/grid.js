@@ -11,6 +11,10 @@ const GridRow = styled.div`
 
 const GridColumn = styled.div`
   width: ${props => props.width * 10}%;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `
 
 export default class Grid extends Component {

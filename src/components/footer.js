@@ -3,6 +3,9 @@ import styled from 'styled-components'
 
 const FooterWrapper = styled.footer`
   padding: 20px 10%;
+  @media (max-width: 700px) {
+    padding: 20px 5%;
+  }
   display: flex;
   width: 100%; 
   align-content: space-around;

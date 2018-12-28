@@ -17,6 +17,9 @@ const Navbar = styled.div`
   z-index: 100;
   box-shadow: ${props => props.scrolled ? '0px 4px 18px rgba(0,0,0,0.1)' : ''};
   transition: all 0.5s;
+  @media (max-width: 700px) {
+    padding: 0px 10%;
+  }
   img.logo {
     width: 100px;
   }
