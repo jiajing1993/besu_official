@@ -10,11 +10,11 @@ import posed from 'react-pose'
 const AnimatedContainer = posed.div({
   closed: { 
     y: "0px",
-    transition: { duration: 500 } 
+    transition: { duration: 800 } 
   },
   open: { 
-    y: "100px",
-    transition: { duration: 500 }
+    y: "200px",
+    transition: { duration: 800 }
   }
 });
 
@@ -127,9 +127,14 @@ export default class WorkPage extends React.Component {
             </ul>
             </Grid.Column>
             <Grid.Column width={7}>
+            <div className="work-lists">
               <Grid.Row>
-                <WorkListWrapper projects={this.state.showedProject}/>
+                
+                  <WorkListWrapper projects={this.state.showedProject}/>
+                
+                
               </Grid.Row>
+              </div>
             </Grid.Column>
           </Grid.Row>
         </div>
