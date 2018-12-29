@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Grid from '../components/style/grid'
 import Jumbotron from '../components/style/jumbotron'
+import { teams } from '../data/team'
 import '../styles/about.scss'
 
 const AboutPage = () => {
@@ -33,33 +34,23 @@ const AboutPage = () => {
           <p className="about-title">Team</p>
           </Grid.Column>
           <Grid.Column width={6}>
-            <div className="team-member">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIH1m0_TUhNhPEJP7LLrqQNlbPfq3GVDBUEaNPoRZiXhHVphQK" alt=""/>
-              <div className="team-info">
-                <p className="name">Lebron James</p>
-                <p className="role">Project Manager & Business</p>
-                <p className="contact hide">jiyong@besu.com | 014 - 439 9009</p>
-                <p className="contact">jiyong@besu.com | 014 - 439 9009</p>
-              </div>
-            </div>
-            <div className="team-member">
-              <img src="https://cdn3.yoox.biz/cloud/karlwp/uploads/2018/01/Feature-Desktop-2.jpg" alt=""/>
-              <div className="team-info">
-                <p className="name">Lebron James</p>
-                <p className="role">Project Manager & Business</p>
-                <p className="contact hide">jiyong@besu.com | 014 - 439 9009</p>
-                <p className="contact">jiyong@besu.com | 014 - 439 9009</p>
-              </div>
-            </div>
-            <div className="team-member">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwETMfZeZvMtRUEKqSx_obCqoEB3rx8cBJajQFaYVuCccsqPa0" alt=""/>
-              <div className="team-info">
-                <p className="name">Lebron James</p>
-                <p className="role">Project Manager & Business</p>
-                <p className="contact hide">jiyong@besu.com | 014 - 439 9009</p>
-                <p className="contact">jiyong@besu.com | 014 - 439 9009</p>
-              </div>
-            </div>
+            {
+              teams.map((member)=> {
+                return (
+                  <div className="team-member" key={member.id}>
+                    <img src={member.image} alt=""/>
+                    <div className="team-info">
+                      <div>
+                        <p className="name">{ member.name }</p>
+                        <p className="role">{ member.role }</p>
+                        <a href={`mailto:${member.email}`}>Email</a>
+                        <a href={`tel:${member.phone}`}>Phone</a>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })
+            }
           </Grid.Column>
         </ Grid.Row>
         <Grid.Row marginBottom={120}>
@@ -67,7 +58,7 @@ const AboutPage = () => {
           <p className="about-title">Process</p>
           </Grid.Column>
           <Grid.Column width={6}>
-            <ol className="process">
+            <ul className="process">
               <li>Understand and empathize with the users' life (consumer software) or work (business software) needs.</li>
               <li>First Concept - all about paper drawing and communicate.</li>
               <li>We don’t design for you. We design for human, for your users.</li>
@@ -76,7 +67,7 @@ const AboutPage = () => {
               <li>We might make mistake, so your feedback is super important.</li>
               <li>Rocket Launched! Hooray. </li>
               <li>Not end yet, take what users said, and keep improving it!</li>
-            </ol>
+            </ul>
           </Grid.Column>
         </ Grid.Row>
         <Grid.Row marginBottom={120}>
@@ -85,7 +76,12 @@ const AboutPage = () => {
           </Grid.Column>
           <Grid.Column width={6}>
             <div className="pricing">
-              <p>We charged a lots. Please don't call us if you don't have enough budgets.</p>
+              <p>
+                We charged <strong>RM 10,000</strong> for 5 pages website with professional photography shooting.
+                <br/>
+                <br/>
+                For larger projects, please contact for better arrangements. 
+              </p>
             </div>
           </Grid.Column>
         </Grid.Row>

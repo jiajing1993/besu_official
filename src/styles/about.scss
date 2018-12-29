@@ -4,57 +4,72 @@ p.about-title {
   font-weight: bold;
   letter-spacing: 1px;
   color: #2f3640;
+  margin-bottom: 20px;
+
+  @media only screen and (max-width: 700px) {
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 3px solid #daa520;
+  }
 }
 
 p.about-description {
-  font-size: 2vw;
+  font-size: 20px;
   line-height: 1.5;
-  letter-spacing: 1px;
   color: #4a4a4a;
-  @media only screen and (max-width: 600px) {
-    font-size: 6vw;
-    line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  strong {
+    color: black;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 18px;
   }
 }
 
 .team-member {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   img {
     width: 100px;
     height: 100px;
+    border-radius: 100%;
     object-fit: cover;
   }
   .team-info {
-    padding-left: 10px;
+    padding-left: 20px;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     p {
-      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      line-height: 1.5;
+      color: black;
     }
     .name {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
-      letter-spacing: 1.3px;
-      color: #000000;
       margin-bottom: 5px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
     }
     .role {
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 1.1px;
-      color: #9b9b9b;
+      font-size: 16px;
+      
     }
-    .contact {
-      font-size: 12px;
-      color: #9b9b9b;
-      position: absolute;
-      bottom: 5px;
-      left: 10px;
-      &.hide{
-        position: relative;
-        display: block;
-        opacity: 0;
-        left: 0;
+    a {
+      color: black;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 0px;
+      margin-right: 10px;
+      border-bottom: 1px solid black;
+      &:hover {
+        color: #daa520;
+        border-color: #daa520;
       }
     }
   }
@@ -62,27 +77,28 @@ p.about-description {
 
 .process {
   li {
-    font-size: 2vw;
-    font-weight: bold;
+    font-size: 20px;
     line-height: 1.5;
-    letter-spacing: 1px;
-    color: #4a4a4a;
+    letter-spacing: 1.5px;
+    color: black;
     margin-bottom: 20px;
-    @media only screen and (max-width: 600px) {
-      font-size: 5vw;
-      line-height: 1.1;
+    font-weight: 300;
+    @media only screen and (max-width: 700px) {
+      font-size: 18px;
     }
+
   }
 }
 
 .pricing {
   p {
-    font-size: 2vw;
-    letter-spacing: 1.2px;
-    color: #4a4a4a;
-    @media only screen and (max-width: 600px) {
-      font-size: 5vw;
-      line-height: 1.1;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    color: black;
+    font-weight: 300;
+    @media only screen and (max-width: 700px) {
+      font-size: 18px;
     }
   }
 }
