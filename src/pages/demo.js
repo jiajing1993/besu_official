@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Notification, { Banner } from '../components/popup'
+import Popup, { Banner, Notification } from '../components/popup'
 import '../styles/demo.scss'
 
 const Button = styled.button`
@@ -23,16 +23,32 @@ const Button = styled.button`
   }
 `
 export default class demo extends Component {
+  state = {
+    show: false,
+    component: "",
+  }
+
+  showModal = () => {
+    this.setState({ show: true });
+    setTimeout(
+      function() {
+          this.setState({show: false});
+      }
+      .bind(this),
+      3000
+    );
+  };
+
   render() {
     return (
       <div className="demo-wrapper">
         <div className="demo">
           <h2>Converting Visitor to Buyer</h2>
-          <Button background="black" color="white">Banner</Button>
-          <Button background="white" color="black">Notification</Button>
+          <Button background="black" color="white" >Banner</Button>
+          <Button background="white" color="black" onClick={()=> this.showModal()} >Notification</Button>
           <Button background="black" color="white">Popup</Button>
-          <Notification />
-          <Banner></Banner>
+          <Notification show={this.state.show}/>
+          <Banner />
         </div>
       </div>
     )
