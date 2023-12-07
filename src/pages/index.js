@@ -25,7 +25,7 @@ const JumbotronText = styled.section`
       color: #daa520;
     }
   }
-`;
+`
 
 const Nav = styled.nav`
   width: 30%;
@@ -42,7 +42,7 @@ const Nav = styled.nav`
     transition: all 0.4s;
     &:hover {
       color: ${props => props.theme.gold};
-      box-shadow: 0px 3px 0px rgba(${props => props.theme.goldRGB}, 1)
+      box-shadow: 0px 3px 0px rgba(${props => props.theme.goldRGB}, 1);
     }
   }
   @media only screen and (max-width: 600px) {
@@ -50,18 +50,24 @@ const Nav = styled.nav`
     text-align: left;
     padding: 20px 0;
   }
-`;
+`
 
 const IndexPage = () => (
   <Layout>
     <Home>
       <JumbotronText>
-        <p className="title-bg">We Design <span>Brand Experience</span> To Help & <span>Grow Your Business</span></p>
+        <p className="title-bg">
+          We Design <span>Brand Experience</span> To Help &{' '}
+          <span>Grow Your Business</span>
+        </p>
       </JumbotronText>
       <Nav>
-        <div><Link to="/value/">Value</Link></div>
-        <div><Link to="/work/">Work</Link></div>
-        <div><Link to="/about/">About</Link></div>
+        <div>
+          <Link to="/value/">Value</Link>
+        </div>
+        <div>
+          <Link to="/about/">About</Link>
+        </div>
       </Nav>
     </Home>
   </Layout>

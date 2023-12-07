@@ -7,7 +7,7 @@ const FooterWrapper = styled.footer`
     padding: 20px 5%;
   }
   display: flex;
-  width: 100%; 
+  width: 100%;
   align-content: space-around;
   p {
     width: 50%;
@@ -32,9 +32,11 @@ const FooterWrapper = styled.footer`
 const Footer = ({ info }) => (
   <FooterWrapper>
     <p>
-      <a href="mailto:jiajing@besu.asia">jiajing@besu.asia</a>
-      &nbsp;|&nbsp; 
-      <a href="tel:0185754123">018-575 4123</a>
+      <a href="mailto:jiajing@besu.asia">
+        Base Creative Experience Consultancy PLT
+      </a>
+      &nbsp;-&nbsp;
+      <a href="tel:0185754123">201704003337</a>
     </p>
     <p>© Besu</p>
   </FooterWrapper>

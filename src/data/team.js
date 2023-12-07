@@ -1,29 +1,21 @@
 import jiajing from './images/jiajing.png'
-import eric from './images/eric.png'
-import pohsoon from './images/pohsoon.png'
+import mark from './images/mark.jpeg'
+
 export const teams = [
   {
     id: 1,
-    name: "Eric Lim",
-    image: eric,
-    role: "Video Production and Business",
-    email: "eric@besu.asia",
-    phone: "018-5754123"
-  },
-  {
-    id: 2,
-    name: "Gabriel Poh Soon",
-    image: pohsoon,
-    role: "Brand Identity and Business",
-    email: "pohsoon@besu.asia",
-    phone: "018-5754123"
+    name: 'Mark Siah HanSeng',
+    image: mark,
+    role: 'Backend Developement and Business',
+    email: '-',
+    phone: '-',
   },
   {
     id: 3,
-    name: "Jia Jing",
+    name: 'Jia Jing',
     image: jiajing,
-    role: "Product Design and Development",
-    email: "jiajing@besu.asia",
-    phone: "018-5754123"
+    role: 'Product Design and Frontend Development',
+    email: 'jiajing19932@gmail.com',
+    phone: '018-5754123',
   },
 ]
